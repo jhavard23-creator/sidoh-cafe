@@ -1,0 +1,574 @@
+/* =====================================
+   SIDÓH CAFE - SHARED WEBSITE DESIGN
+===================================== */
+
+:root {
+  --cream: #f8f4eb;
+  --beige: #e9dfcf;
+  --brown: #49362b;
+  --dark-brown: #30241e;
+  --olive: #737653;
+  --text: #514237;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HEADER AND NAVIGATION */
+
+.site-header {
+  background: var(--cream);
+  border-bottom: 1px solid #e5dccd;
+  position: relative;
+  z-index: 10;
+}
+
+.navigation {
+  min-height: 92px;
+  max-width: 1450px;
+  margin: auto;
+  padding: 12px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.navigation > a:not(.logo-link) {
+  font-size: 15px;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.navigation > a:not(.logo-link):hover {
+  color: var(--olive);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.logo-link img {
+  width: 49px;
+  height: 57px;
+  object-fit: contain;
+}
+
+.slogan {
+  background: var(--brown);
+  color: var(--cream);
+  border-radius: 30px;
+  padding: 10px 17px;
+  font-size: 13px;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+/* HERO */
+
+.hero {
+  height: 590px;
+  position: relative;
+  overflow: hidden;
+  background: var(--brown);
+}
+
+.hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.68;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  margin: 0 0 12px;
+  letter-spacing: 2px;
+}
+
+.hero-content p:not(.eyebrow) {
+  font-size: 20px;
+  margin: 0 0 27px;
+}
+
+/* TEXT AND BUTTONS */
+
+.eyebrow {
+  color: var(--olive);
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f5e7d4;
+}
+
+.button {
+  display: inline-block;
+  background: var(--olive);
+  color: var(--white);
+  border: 0;
+  padding: 13px 25px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: var(--brown);
+}
+
+.text-link {
+  color: var(--olive);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* HOMEPAGE MENU HIGHLIGHTS */
+
+.section {
+  padding: 75px 5%;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.section-heading h2,
+.welcome-note h2 {
+  color: var(--brown);
+  font-size: 32px;
+  margin: 5px 0 10px;
+}
+
+.product-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item img {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  box-shadow: 0 5px 18px #49362b20;
+}
+
+.menu-item h3 {
+  color: var(--brown);
+  margin-top: 17px;
+  font-size: 19px;
+}
+
+/* FAMILY FRIEND COFFEE PROMOTION */
+
+.bean-promotion {
+  background: var(--beige);
+  padding: 65px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.bean-image img {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+}
+
+.bean-content h2 {
+  font-size: 37px;
+  color: var(--brown);
+  line-height: 1.2;
+}
+
+.bean-content p:not(.eyebrow) {
+  margin-bottom: 25px;
+}
+
+/* HOMEPAGE WELCOME */
+
+.welcome-note {
+  text-align: center;
+  padding: 75px 15%;
+}
+
+.welcome-note p {
+  max-width: 760px;
+  margin: 15px auto 25px;
+}
+
+/* PAGE BANNERS */
+
+.page-banner {
+  text-align: center;
+  padding: 65px 20px;
+  background: var(--beige);
+}
+
+.page-banner h1 {
+  color: var(--brown);
+  font-size: clamp(34px, 5vw, 48px);
+  margin: 5px 0;
+}
+
+.page-banner p {
+  margin: 8px 0;
+}
+
+/* ABOUT PAGE */
+
+.about-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-section.reverse .about-image {
+  order: 2;
+}
+
+.about-image img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.about-text h2,
+.product-feature-text h2 {
+  color: var(--brown);
+  font-size: 34px;
+  line-height: 1.25;
+  margin-top: 8px;
+}
+
+.mission-section {
+  background: #e9e8dc;
+  text-align: center;
+  padding: 65px 12%;
+}
+
+.mission-section h2 {
+  color: var(--brown);
+  font-size: 32px;
+}
+
+.mission-section p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 15px auto 25px;
+}
+
+/* PRODUCTS PAGE */
+
+.product-feature {
+  max-width: 1200px;
+  margin: auto;
+  padding: 75px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.product-feature-image img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+
+/* SURVEY PAGE */
+
+.survey-container {
+  max-width: 850px;
+  margin: 55px auto;
+  padding: 0 25px;
+}
+
+.survey-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.question {
+  border: 1px solid #ddd2c1;
+  background: #fffdf8;
+  padding: 22px;
+  margin: 0 0 20px;
+  border-radius: 5px;
+}
+
+.question legend {
+  color: var(--brown);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.question label {
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.question input[type="radio"],
+.question input[type="checkbox"] {
+  margin-right: 9px;
+  accent-color: var(--olive);
+}
+
+.question input[type="text"],
+.question input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfc4b4;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.thank-you {
+  background: var(--beige);
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.thank-you h2 {
+  color: var(--brown);
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+}
+
+.contact-container h2 {
+  color: var(--brown);
+  font-size: 34px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfc4b4;
+  border-radius: 3px;
+  background: #fffdf8;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.site-footer p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.site-footer p:first-child {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* INDIVIDUAL PAGE COLOR CUSTOMIZATION */
+
+.about-page {
+  background-color: #f8f4eb;
+}
+
+.products-page {
+  background-color: #f8f4eb;
+}
+
+.survey-page {
+  background-color: #f8f4eb;
+}
+
+.contact-page {
+  background-color: #f8f4eb;
+}
+
+/* MOBILE AND TABLET */
+
+@media (max-width: 950px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 18px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bean-promotion,
+  .about-section,
+  .product-feature,
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-section.reverse .about-image {
+    order: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .navigation > a:not(.logo-link) {
+    font-size: 13px;
+  }
+
+  .logo-link img {
+    width: 40px;
+    height: 48px;
+  }
+
+  .slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .hero {
+    height: 460px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 50px 5%;
+  }
+
+  .product-grid {
+    gap: 22px 12px;
+  }
+
+  .menu-item img {
+    width: 145px;
+    height: 145px;
+  }
+
+  .menu-item h3 {
+    font-size: 16px;
+  }
+
+  .bean-promotion {
+    padding: 45px 7%;
+  }
+
+  .bean-content h2,
+  .about-text h2,
+  .product-feature-text h2 {
+    font-size: 29px;
+  }
+
+  .about-section,
+  .product-feature,
+  .contact-container {
+    padding: 45px 7%;
+  }
+
+  .page-banner {
+    padding: 45px 18px;
+  }
+}
