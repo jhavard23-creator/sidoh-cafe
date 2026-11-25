@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West LA Coffee Survey | SIDÓH CAFE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="survey.html">Survey</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html" class="logo-link">
+      <img src="images/sidoh-logo.png" alt="SIDÓH CAFE logo">
+    </a>
+    <span class="slogan">Good Coffee. Good Community.</span>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <p class="eyebrow">WE'D LOVE YOUR FEEDBACK</p>
+    <h1>West LA Coffee Community Survey</h1>
+    <p>Help us discover your favorite local coffee shops!</p>
+  </section>
+
+  <section class="survey-container">
+    <p class="survey-intro">
+      We're exploring the coffee culture in West Los Angeles!
+      We want to learn about your favorite local coffee shops,
+      what makes them special, and whether you've heard of
+      Family Friend Coffee. Your responses will help us connect
+      with local cafés and introduce our coffee beans to more communities.
+    </p>
+
+    <!-- Connect this form to Formspree before publishing.
+         Replace YOUR_FORM_ID with your actual Formspree form ID. -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST">
+
+      <fieldset class="question">
+        <legend>1. What is your favorite coffee shop in West Los Angeles?</legend>
+        <input type="text" name="favorite_coffee_shop"
+               placeholder="Enter coffee shop name" required>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>2. How often do you visit coffee shops in West Los Angeles?</legend>
+        <label><input type="radio" name="visit_frequency" value="Every day" required> Every day</label>
+        <label><input type="radio" name="visit_frequency" value="Several times a week"> Several times a week</label>
+        <label><input type="radio" name="visit_frequency" value="Once a week"> Once a week</label>
+        <label><input type="radio" name="visit_frequency" value="A few times a month"> A few times a month</label>
+        <label><input type="radio" name="visit_frequency" value="Rarely"> Rarely</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>3. What type of coffee do you usually enjoy?</legend>
+        <label><input type="radio" name="coffee_type" value="Espresso" required> Espresso</label>
+        <label><input type="radio" name="coffee_type" value="Latte or cappuccino"> Latte or cappuccino</label>
+        <label><input type="radio" name="coffee_type" value="Cold brew or iced coffee"> Cold brew or iced coffee</label>
+        <label><input type="radio" name="coffee_type" value="Drip coffee"> Drip coffee</label>
+        <label><input type="radio" name="coffee_type" value="Other"> Other</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>4. What do you love most about your favorite coffee shop? (Select all that apply.)</legend>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Quality of coffee"> Quality of coffee</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Friendly atmosphere"> Friendly atmosphere</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Locally roasted coffee beans"> Locally roasted coffee beans</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Affordable prices"> Affordable prices</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Community atmosphere"> Community atmosphere</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Convenient location"> Convenient location</label>
+        <label><input type="checkbox" name="favorite_shop_features[]" value="Other"> Other</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>5. Would you be interested in seeing Family Friend Coffee beans available at your favorite local coffee shop?</legend>
+        <label><input type="radio" name="interest_in_beans" value="Yes, absolutely!" required> Yes, absolutely!</label>
+        <label><input type="radio" name="interest_in_beans" value="Maybe, I'd like to try them first"> Maybe, I'd like to try them first.</label>
+        <label><input type="radio" name="interest_in_beans" value="Not sure"> Not sure</label>
+        <label><input type="radio" name="interest_in_beans" value="No"> No</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>6. Do you know any local coffee shops that might be interested in carrying coffee beans from a local supplier?</legend>
+        <label><input type="radio" name="know_coffee_shops" value="Yes" required> Yes</label>
+        <label><input type="radio" name="know_coffee_shops" value="No"> No</label>
+        <label><input type="radio" name="know_coffee_shops" value="Maybe"> Maybe</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>7. If yes, which coffee shop would you recommend we contact?</legend>
+        <input type="text" name="recommended_shop"
+               placeholder="Coffee shop name and location">
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>8. Do you personally know a coffee shop owner or manager who might be interested in connecting with Family Friend Coffee?</legend>
+        <label><input type="radio" name="know_owner" value="Yes, I could make an introduction" required> Yes, I could make an introduction.</label>
+        <label><input type="radio" name="know_owner" value="I know someone, but I'm not sure"> I know someone, but I'm not sure.</label>
+        <label><input type="radio" name="know_owner" value="No"> No</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>9. What matters most to you when choosing coffee beans? (Select all that apply.)</legend>
+        <label><input type="checkbox" name="bean_priorities[]" value="Flavor and quality"> Flavor and quality</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Freshness"> Freshness</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Locally roasted coffee"> Locally roasted coffee</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Ethical sourcing"> Ethical sourcing</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Affordable pricing"> Affordable pricing</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Supporting small businesses"> Supporting small businesses</label>
+        <label><input type="checkbox" name="bean_priorities[]" value="Other"> Other</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>10. Would you like to receive updates or learn more about Family Friend Coffee?</legend>
+        <label><input type="radio" name="updates" value="Yes" required> Yes</label>
+        <label><input type="radio" name="updates" value="No"> No</label>
+      </fieldset>
+
+      <fieldset class="question">
+        <legend>11. If yes, please provide your email address. (Optional)</legend>
+        <input type="email" name="email"
+               placeholder="Your email address">
+      </fieldset>
+
+      <button type="submit" class="button">Submit Survey</button>
+    </form>
+
+    <div class="thank-you">
+      <h2>Thank You!</h2>
+      <p>
+        Thank you for supporting our local coffee community! ☕❤️
+        Your recommendations help us discover amazing neighborhood
+        cafés and create opportunities for Family Friend Coffee
+        to connect with local businesses.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>SIDÓH CAFE</p>
+  <p>Local Inspiration · Community · Quality Coffee</p>
+  <p>Good Coffee. Good Community.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
