@@ -231,9 +231,12 @@ a {
 
 .bean-image img {
   width: 100%;
-  max-height: 370px;
+  max-height: 430px;
   object-fit: cover;
+  display: block;
+  border-radius: 4px;
 }
+
 
 .bean-content h2 {
   font-size: 37px;
