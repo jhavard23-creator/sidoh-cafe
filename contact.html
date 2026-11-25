@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SIDÓH CAFE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="survey.html">Survey</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html" class="logo-link">
+      <img src="images/sidoh-logo.png" alt="SIDÓH CAFE logo">
+    </a>
+    <span class="slogan">Good Coffee. Good Community.</span>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <p class="eyebrow">SAY HELLO</p>
+    <h1>Contact SIDÓH CAFE</h1>
+    <p>We would love to hear from you.</p>
+  </section>
+
+  <section class="contact-container">
+    <div>
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Get in Touch</h2>
+      <p>
+        Have a question, a suggestion, or simply want to say hello?
+        We welcome your message.
+      </p>
+      <h3>For Coffee Shop Owners and Businesses</h3>
+      <p>
+        Interested in learning more about Family Friend Coffee beans?
+        Contact us to discuss your interest and potential opportunities.
+      </p>
+    </div>
+
+    <!-- Replace YOUR_FORM_ID with a separate Formspree form ID
+         if you want this contact form to receive messages. -->
+    <form class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST">
+      <label for="name">Your Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="contact-email">Email Address</label>
+      <input id="contact-email" name="email" type="email" required>
+
+      <label for="subject">Subject</label>
+      <select id="subject" name="subject">
+        <option value="General question">General question</option>
+        <option value="Family Friend Coffee inquiry">Family Friend Coffee inquiry</option>
+        <option value="Wholesale inquiry">Wholesale inquiry</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>SIDÓH CAFE</p>
+  <p>Local Inspiration · Community · Quality Coffee</p>
+  <p>Good Coffee. Good Community.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
