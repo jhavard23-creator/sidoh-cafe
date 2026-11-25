@@ -216,12 +216,17 @@ a {
 /* FAMILY FRIEND COFFEE PROMOTION */
 
 .bean-promotion {
-  background: var(--beige);
-  padding: 65px 8%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 75px 8%;
+    background: linear-gradient(
+        90deg,
+        #f8f4eb 0%,
+        #eee5d7 50%,
+        #e9dfcf 100%
+    );
 }
 
 .bean-image img {
