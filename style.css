@@ -588,6 +588,10 @@ a {
 }
 
 .navigation a[aria-current="page"] {
-  color: var(--olive);
+  color: var(--cream);
+  background: var(--brown);
+  border: 1px solid #d6a45f;
+  border-radius: 999px;
+  padding: 6px 18px;
   font-weight: bold;
 }
