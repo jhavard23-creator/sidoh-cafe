@@ -207,6 +207,11 @@ a {
   box-shadow: 0 5px 18px #49362b20;
 }
 
+.menu-item:nth-child(3) img {
+  object-position: 52% center;
+}
+
+
 .menu-item h3 {
   color: var(--brown);
   margin-top: 17px;
