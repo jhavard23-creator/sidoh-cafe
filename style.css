@@ -644,7 +644,7 @@ a {
 
 /* HOMEPAGE HERO BUTTON */
 .hero-content .button {
-  border: 1px solid #e2b568;
+  border: 1px solid var(--cream);
   border-radius: 999px;
 }
 .hero-content .button span {
