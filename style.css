@@ -640,3 +640,13 @@ a {
     margin: 20px auto 0;
   }
 }
+
+
+/* HOMEPAGE HERO BUTTON */
+.hero-content .button {
+  border: 1px solid #e2b568;
+  border-radius: 999px;
+}
+.hero-content .button span {
+  margin-left: 10px;
+}
